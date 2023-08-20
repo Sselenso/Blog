@@ -106,8 +106,8 @@
           <button class="post__actions-btn">...</button>
           <div class="post__context-menu" id="contextMenu${index}">
             <div class="post__context">
-              <button class="post__context-menu-item delete-post-btn">Удалить</button>
-              <button class="post__context-menu-item edit-post-btn">Редактировать</button>
+              <button class="post__context-menu-item delete-post-btn">Terminate</button>
+              <button class="post__context-menu-item edit-post-btn">Modify</button>
             </div>
           </div>
         </div>
