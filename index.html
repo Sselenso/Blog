@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=IBM+Plex+Mono:wght@400;700&family=Manrope:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="blog__wrapper">
+      <div class="col__wrapper">
+        <div class="col">
+          <h1>Follow the white rabbit</h1>
+          <input
+            class="js-post-title-input post-title-input"
+            placeholder="Enter the code"
+            type="text"
+            oninput="validation()"
+          />
+
+          <textarea
+            class="js-post-text-input post-text-input"
+            placeholder="Enter the message"
+            type="text"
+            oninput="validation()"
+          ></textarea>
+        </div>
+        <button class="js-new-post-btn new-post-btn" onclick="addPost()">Execute</button>
+				<div
+        id="validationMessage"
+        class="validation__message validation__message-hidden"
+      ></div>
+      </div>
+      
+
+      <div class="posts__wrapper">
+        <h2>Reality Report</h2>
+        <div class="js-posts posts"></div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>		
+  </body>
+</html>

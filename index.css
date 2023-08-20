@@ -1,0 +1,168 @@
+html {
+	background-color: #000000;
+}
+
+body {
+	font-family: "Courier Prime", Courier, monospace;
+	font-weight: normal;
+	font-size: 20px;
+	word-wrap: break-word;
+}
+
+h1 {
+	margin-bottom: 5px;
+	font-size: 48px;
+	font-weight: bold;
+	color: #18b700;
+}
+
+
+h2 {
+	margin-bottom: 5px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #18b700;
+	border-bottom: 1px solid;
+}
+
+.blog__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 800px;
+	margin: 0 auto;
+	border: 1px solid #49fc03;
+	gap: 20px;
+}
+
+.col__wrapper {
+	width: 760px;	
+	height: 230px;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-top: 15px;
+}
+
+.posts {
+	color: #05cb02;
+}
+
+.post-title-input {
+	display: flex;	
+	color: #18b700;
+	border: 1px solid #49fc03;
+	cursor: url(./resources/rabbit.svg), auto;
+}
+
+.post-text-input {
+	display: flex;	
+	height: 100px;
+	color: #18b700;
+	border: 1px solid #49fc03;
+}
+
+input[type="text"], textarea {
+  cursor: url(./resources/rabbit.svg), auto;	
+}
+
+
+.new-post-btn {
+	position: absolute;
+    right: 0;
+		bottom: -10px;
+    width: 100px;
+    padding: 5px;
+		background-color: #05cb02;
+		color: #000000;
+}
+
+.new-post-btn:disabled {
+	position: absolute;
+    right: 0;
+		bottom: -10px;
+    width: 100px;
+    padding: 5px;
+		color: #b70000;
+		background-color: #3d3d3d;
+}
+
+.posts__wrapper {	
+	padding: 20px;
+	width: 800px;
+	border-top: 1px solid #49fc03;
+}
+
+.post {	
+	display: block;
+	position: relative;
+	padding: 15px;
+	border-bottom: 0.3px solid;
+}
+
+.post__date {
+	margin-bottom: 15px;
+	color: #149400d0;
+}
+
+.post__title {
+	margin-bottom: 10px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+.post__text {}
+
+.post__actions{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.post__actions-btn {
+  display: block;
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+	font-size: 30px;
+  color: #149400d0;
+  background-color: #000000;
+  background-size: contain;
+}
+
+.post__context-menu {
+  background-color: #000000;
+  border: 1px solid #49fc03;
+  border-radius: 5px;
+  margin-right: 40px;
+	margin-top: 15px;
+  display: none;
+}
+.post__context{
+	display: flex;
+	flex-direction: column;
+}
+
+.post__context-menu-item {
+  background-color: #000000;
+  color: #05cb02;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.validation__message {	
+	color: #b70000;
+	display: inline-block;
+	margin-top: 10px;
+}
+
+.validation__message_hidden {
+	display: none;
+}
